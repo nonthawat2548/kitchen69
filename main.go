@@ -118,4 +118,5 @@ func main() {
 	mux.HandleFunc("POST /menu", createMenu)
 	mux.HandleFunc("DELETE /menu/{id}", deleteMenu)
 	http.ListenAndServe(":8080", withCORS(mux))
+	
 }
